@@ -1561,7 +1561,7 @@ function menu_set_active_trail($new_trail = NULL) {
     }
 
     $tree = menu_tree_page_data(menu_get_active_menu_name());
-
+    // The while() loop assumes that the $tree array pointer advances already.
     $curr = current($tree);
     next($tree);
 
